@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    /* colorhunt es una página que tiene paletas de colores muy bonitas, puedes usarla para seleccionar los colores de la página */
+        --color-primario: #000000;
+        --color-secundario: #F6F6F6;
+        --color-terciario: #22D4FD;
+        --color-hover: #272727;
+    
+      --fuente-montse: 'Montserrat', sans serif;
+      --fuente-krona: 'Krona One', sans serif;
+    }
+
+body {
+    background-color: #c0d1c6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+.header {
+    padding: 2% 0% 0% 2%;
+}
+
+.header__logo {
+    display: flex;
+    gap: 5rem;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 6% 6%;
+    justify-content: space-between;
+}
+
+.espacioCentral{
+    width: 400px 400px;
+}
+
+.presentacion__contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.texto {
+    font-size: 32px;
+    font: 'Inter';
+    font-weight: 400;
+}
+
+.sugerencias{
+    font: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.botones{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 600px;
+    
+}
+
+.mini {
+    width: 10px;
+}
+
+.acciones{
+    width: 280px;
+    background-color: #67a8a1;
+    font: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    color:#000000;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 24px;
+}
+
+.presentacion__imagen {
+    border-radius: 32px;
+}

@@ -4,27 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <form>
-        <div>
-            <label form="aEncri">Introduzca su texto a encriptar:</label><br>
-            <input type="text" id="userText">
-            <button onclick="encriptar()" type="button">Encriptar</button>
-        </div>
+    <header class="header">
+        <nav class="header__logo">
+            <img src="./assets/logo.png">
+        </nav>
+    </header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <h1 class="presentacion__contenido__titulo">Bienvenido a tu encriptador/desencriptador Mi Alegría</strong></h1>
+            <form class="espacioCentral">
+                <div>
+                    <label form="aEncri" class="texto">Ingrese el texto aquí:</label><br>
+                    <input class="texto" type="text" type="submit" id="userText" name="userText">
+
+                </div>
+            </form>
+            <div class="sugerencias" ><img class="mini" src="./assets/exclamation.png"> Sólo letras minúsculas y sin acentos</div>
+                <div class="botones">
+                    <button onclick="encriptar();" type="button" class="acciones">Encriptar</button>
+                    
+                    <button onclick="desencriptar()" type="button" class="acciones">Desencriptar</button>
+                </div>
+            
+        </section>
+        <img class="presentacion__imagen" src="./assets/spy.png" alt="servicio de encriptación">
+        
+    </main>
+    
 
 
-        <h2 id = "resultado"></h2>
-
-        <div>
-            <label form="aDesencri">Introduzca su texto a desencriptar:</label><br>
-            <input type="text" id="encriText">
-            <button onclick="desencriptar()" type="button">Desencriptar</button>
-        </div>
-    </form>
-
-
-
+    <footer class="footer">
+        <p>Desarrollado por Elizabeth LB</p>
+    </footer>
     <script src="codigo.js"></script>
 </body>
 </html>

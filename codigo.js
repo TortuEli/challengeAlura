@@ -1,11 +1,13 @@
+
 var encriptado = "";
 var desencriptado = "";
 
-function encriptar(){
-    var textoUsuario = document.getElementById("userText").value;
+
+var encriptar = function(){
+    window.location.href = "./resultado.html";
+    var textoUsuario = document.getElementById('userText').value;
 
     separar = Array.from(textoUsuario);
-    console.log(separar);
 
     separar.forEach(element => {
         if (element == "a"){
@@ -25,22 +27,27 @@ function encriptar(){
         }
         encriptado += element;
     });
-    console.log(encriptado);
-
+    localStorage.setItem('datoCompartido', encriptado);
 }
 
 function desencriptar(){
-    console.log("Este botón sirve para desencriptar el texto");
-    var textoADes = document.getElementById("encriText").value;
-    console.log(textoADes);
-    desencriptado = textoADes.replace(/ai/g, "a");
+    window.location.href = "./resultado.html";
+    var textoUsuario = document.getElementById('userText').value;
+    desencriptado = textoUsuario.replace(/ai/g, "a");
     desencriptado = desencriptado.replace(/imes/g, "i");
     desencriptado = desencriptado.replace(/ober/g, "o");
     desencriptado = desencriptado.replace(/enter/g, "e");
     desencriptado = desencriptado.replace(/ufat/g, "u");
-    console.log(desencriptado);
-
-
+    localStorage.setItem('datoCompartido', desencriptado);
 
 }
+
+function despues() {
+    var dato = localStorage.getItem('datoCompartido');
+    document.getElementById('resultado').innerText = dato;
+    
+}
+
+
+
 
