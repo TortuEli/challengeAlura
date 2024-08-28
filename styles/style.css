@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-:root{
-    /* colorhunt es una página que tiene paletas de colores muy bonitas, puedes usarla para seleccionar los colores de la página */
-        --color-primario: #000000;
-        --color-secundario: #F6F6F6;
-        --color-terciario: #22D4FD;
-        --color-hover: #272727;
-    
-      --fuente-montse: 'Montserrat', sans serif;
-      --fuente-krona: 'Krona One', sans serif;
-    }
 
 body {
     background-color: #c0d1c6;
@@ -39,7 +29,7 @@ body {
 }
 
 .espacioCentral{
-    width: 400px 400px;
+    width: 900px 400px;
 }
 
 .presentacion__contenido {
@@ -49,22 +39,29 @@ body {
     gap: 2.5rem;
 }
 
+.recuadro {
+    width: 400px;
+    height: fit-content;
+}
+
 .texto {
     font-size: 32px;
     font: 'Inter';
     font-weight: 400;
+    width: 100%;
 }
 
 .sugerencias{
     font: 'Inter';
     font-size: 12px;
     font-weight: 400;
+    border-radius: 32px;
 }
 
 .botones{
     display: flex;
     justify-content:space-between;
-    padding-top: 600px;
+    padding-top: 300px;
     
 }
 
